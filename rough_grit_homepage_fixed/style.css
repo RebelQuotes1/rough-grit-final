@@ -1,0 +1,40 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('desert_road.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 100px 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 3em;
+  color: #FFD700;
+  margin-bottom: 0.5em;
+}
+p {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 2em;
+}
+.buttons a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 25px;
+  background: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.buttons a:hover {
+  background-color: #00ffff;
+  color: #000;
+}
