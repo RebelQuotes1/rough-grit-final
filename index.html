@@ -2,23 +2,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rough Grit</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rough Grit - Survival Done Right</title>
+  <meta name="description" content="Survival gear, blog, and tools for rough times. Grit-tested. Adversity-approved.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1532367766505583"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <h1>ROUGH GRIT</h1>
-    <p>Rough Gear for Rougher Times</p>
-    <nav>
-      <a href="store.html">Store</a> |
-      <a href="blog.html">Blog</a> |
-      <a href="grit-test.html">Grit Test</a>
-    </nav>
+    <img src="rough-grit-logo.png" alt="Rough Grit Logo" width="140">
+    <h1>Rough Grit</h1>
+    <p class="tagline">Rough Gear for Rougher Times</p>
   </header>
-  <main>
-    <p>Welcome to Grit Gear HQ — where survival meets style. Load up. Toughen up. Thrive.</p>
-  </main>
+  <section class="cta">
+    <a href="store/index.html" class="button">Visit Gear Store</a>
+    <a href="blog/index.html" class="button">Read the Blog</a>
+    <a href="grit-test/index.html" class="button">Take the Grit Test</a>
+  </section>
+  <section class="quote-box">
+    <p id="quote">"Only the prepared survive."</p>
+  </section>
+  <footer>
+    <p>&copy; 2024 Serpico | Built for the Collapse</p>
+  </footer>
+  <script>
+    const quotes = [
+      "Only the prepared survive.",
+      "Die young as late as possible.",
+      "Comfort is a slow death.",
+      "Hope is not a plan.",
+      "Grit isn’t given. It’s earned in the fire."
+    ];
+    document.getElementById("quote").innerText = quotes[Math.floor(Math.random() * quotes.length)];
+  </script>
 </body>
 </html>
