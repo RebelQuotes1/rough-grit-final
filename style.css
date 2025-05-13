@@ -1,1 +1,1 @@
-body { background: #111; color: #eee; font-family: sans-serif; text-align: center; } .logo { max-width: 150px; } nav a { color: orange; margin: 0 1em; text-decoration: none; } nav a:hover { text-decoration: underline; }
+body { font-family: Arial, sans-serif; background: #111; color: #eee; text-align: center; padding: 20px; } a.btn { display: inline-block; margin: 10px; padding: 10px 20px; background: #333; color: #fff; text-decoration: none; } a.btn:hover { background: orange; color: black; }
