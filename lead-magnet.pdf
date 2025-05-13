@@ -1,1 +1,13 @@
-%PDF-1.4 example content
+%PDF-1.4
+%Fake PDF Content
+1 0 obj
+<< /Type /Catalog >>
+endobj
+xref
+0 2
+0000000000 65535 f 
+trailer
+<< /Root 1 0 R >>
+startxref
+9
+%%EOF
