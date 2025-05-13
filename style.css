@@ -1,1 +1,1 @@
-body { font-family: 'Orbitron', sans-serif; background: #111; color: #eee; }
+body { background: #111; color: #eee; font-family: sans-serif; text-align: center; } .logo { max-width: 150px; } nav a { color: orange; margin: 0 1em; text-decoration: none; } nav a:hover { text-decoration: underline; }
