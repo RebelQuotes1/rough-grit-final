@@ -1,1 +1,0 @@
-console.log('Rough Grit site active');
