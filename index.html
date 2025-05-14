@@ -2,48 +2,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rough Grit - Survival Done Right</title>
-  <meta name="description" content="Survival gear, blog, and tools for rough times. Grit-tested. Adversity-approved.">
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1532367766505583"
-     crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grit Gear HQ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img src="rough-grit-logo.png" alt="Rough Grit Logo" width="140">
-    <h1>Rough Grit</h1>
-    <p class="tagline">Rough Gear for Rougher Times</p>
-  </header>
-  <section class="cta">
-    <a href="store/index.html" class="button">Visit Gear Store</a>
-    <a href="blog/index.html" class="button">Read the Blog</a>
-    <a href="grit-test/index.html" class="button">Take the Grit Test</a>
-  </section>
-  <section class="quote-box">
-    <p id="quote">"Only the prepared survive."</p>
-  </section>
-  <footer>
-    <p>&copy; 2024 Serpico | Built for the Collapse</p>
-  </footer>
-  <script>
-    const quotes = [
-      "Only the prepared survive.",
-      "Die young as late as possible.",
-      "Comfort is a slow death.",
-      "Hope is not a plan.",
-      "Grit isn’t given. It’s earned in the fire."
-    ];
-    document.getElementById("quote").innerText = quotes[Math.floor(Math.random() * quotes.length)];
-  </script>
+  <div class="texture-bg">
+    <header>
+      <img src="rough_grit_hq_logo.png" alt="Rough Grit HQ Logo" class="logo" />
+      <h1>Rough Grit HQ</h1>
+      <p>Rough Gear for Rougher Times</p>
+    </header>
+    <nav>
+      <a href="store.html" class="btn">Gear Store</a>
+      <a href="blog.html" class="btn">Survival Blog</a>
+      <a href="grit-test.html" class="btn">Take the Grit Test</a>
+    </nav>
+    <main>
+      <section class="feature-box">
+        <h2>Item of the Day</h2>
+        <p id="daily-item">Loading item...</p>
+      </section>
+      <section class="feature-box">
+        <h2>Today's Grit Quote</h2>
+        <blockquote id="daily-quote">Loading quote...</blockquote>
+      </section>
+      <section>
+        <h2>Free Survival Guide</h2>
+        <a href="Cold_Weather_Survival_Items_Guide.pdf" download class="btn">Download PDF</a>
+      </section>
+      <section>
+        <h2>Enter Our Bug-Out Raffle</h2>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Enter Now</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Serpico | Built to Survive</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
