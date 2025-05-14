@@ -14,6 +14,7 @@ header {
 }
 .logo {
   max-width: 160px;
+  filter: drop-shadow(2px 2px 4px #000);
 }
 nav {
   text-align: center;
@@ -42,4 +43,19 @@ footer {
   padding: 2rem;
   font-size: 0.8em;
   color: #888;
+}
+.countdown {
+  animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+  0% { text-shadow: 0 0 5px red; }
+  100% { text-shadow: 0 0 15px red; }
+}
+.enter-btn {
+  box-shadow: 0 0 8px #f80;
+}
+.urgency {
+  color: orange;
+  font-weight: bold;
+  margin-top: 0.5rem;
 }

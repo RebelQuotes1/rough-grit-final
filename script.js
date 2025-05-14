@@ -35,8 +35,8 @@ function updateCountdown() {
   const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-  document.getElementById("doomsday-clock").textContent =
-    `${days}d ${hours}h ${minutes}m ${seconds}s until collapse.`;
+  document.getElementById("doomsday-clock").innerHTML =
+    days + "d " + hours + "h " + minutes + "m " + seconds + "s";
 }
 rotate(items, 'daily-item');
 rotate(quotes, 'daily-quote');

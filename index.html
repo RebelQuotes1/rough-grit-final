@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <audio autoplay loop id="ambient" style="display:none">
+    <source src="wind.mp3" type="audio/mpeg">
+  </audio>
   <div class="texture-bg">
     <header>
       <img src="rough_grit_hq_logo.png" alt="Rough Grit HQ Logo" class="logo" />
@@ -28,9 +31,9 @@
         <h2>Today's Grit Quote</h2>
         <blockquote id="daily-quote">Loading quote...</blockquote>
       </section>
-      <section class="feature-box">
+      <section class="feature-box countdown">
         <h2>Collapse Countdown</h2>
-        <div id="doomsday-clock">Loading countdown...</div>
+        <div id="doomsday-clock">Loading...</div>
       </section>
       <section class="feature-box">
         <h2>Free Survival Guide</h2>
@@ -40,7 +43,8 @@
         <h2>Enter the Bug-Out Raffle</h2>
         <form>
           <input type="email" placeholder="Enter your email" required />
-          <button type="submit">Enter Now</button>
+          <button type="submit" class="btn enter-btn">Enter Now</button>
+          <p class="urgency">🔥 Limited Spots Left!</p>
         </form>
       </section>
     </main>
