@@ -1,1 +1,1 @@
-console.log('JS Loaded');
+console.log('Rough Grit site active');
