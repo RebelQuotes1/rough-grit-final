@@ -8,27 +8,42 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img src="rough_grit_hq_logo.png" alt="Rough Grit HQ Logo" style="max-width:150px;"/>
-    <h1>Rough Grit HQ</h1>
-    <p>Rough Gear for Rougher Times</p>
-  </header>
-  <nav>
-    <a href="store.html" class="btn">Visit Gear Store</a>
-    <a href="blog.html" class="btn">Read the Blog</a>
-    <a href="grit-test.html" class="btn">Take the Grit Test</a>
-  </nav>
-  <main>
-    <section>
-      <h2>Win a Bug-Out Mystery Box</h2>
-      <p>Enter your email to join the raffle + get your free survival PDF instantly.</p>
-      <form>
-        <input type="email" placeholder="Your email" required />
-        <a href="Cold_Weather_Survival_Items_Guide.pdf" download>
-          <button type="button">Enter Raffle & Download</button>
-        </a>
-      </form>
-    </section>
-  </main>
+  <div class="texture-bg">
+    <header>
+      <img src="rough_grit_hq_logo.png" alt="Rough Grit HQ Logo" class="logo" />
+      <h1>Rough Grit HQ</h1>
+      <p>Rough Gear for Rougher Times</p>
+    </header>
+    <nav>
+      <a href="store.html" class="btn">Gear Store</a>
+      <a href="blog.html" class="btn">Survival Blog</a>
+      <a href="grit-test.html" class="btn">Take the Grit Test</a>
+    </nav>
+    <main>
+      <section class="feature-box">
+        <h2>Item of the Day</h2>
+        <p id="daily-item">Loading item...</p>
+      </section>
+      <section class="feature-box">
+        <h2>Today's Grit Quote</h2>
+        <blockquote id="daily-quote">Loading quote...</blockquote>
+      </section>
+      <section>
+        <h2>Free Survival Guide</h2>
+        <a href="Cold_Weather_Survival_Items_Guide.pdf" download class="btn">Download PDF</a>
+      </section>
+      <section>
+        <h2>Enter Our Bug-Out Raffle</h2>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Enter Now</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Serpico | Built to Survive</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
