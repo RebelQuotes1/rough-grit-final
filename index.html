@@ -4,73 +4,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Free Survival Guide</title>
-  <style>
-    body {
-      background-color: #111;
-      color: #f5f5f5;
-      font-family: sans-serif;
-      text-align: center;
-      padding: 2rem;
-    }
-    form {
-      margin-top: 2rem;
-    }
-    input[type="email"] {
-      padding: 0.5rem;
-      width: 300px;
-      font-size: 1rem;
-    }
-    input[type="submit"] {
-      padding: 0.5rem 1rem;
-      background-color: #f90;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-    }
-    .thank-you {
-      display: none;
-      margin-top: 2rem;
-    }
-  </style>
+  <title>Grit Gear HQ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <img src="rough_grit_logo.png" alt="Rough Grit HQ Logo" style="width: 200px; margin-bottom: 1rem;" />
-  <div id="doomsday-clock" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 2rem;"></div>
-  <script>
-    function updateClock() {
-      const endDate = new Date("December 31, 2025 23:59:59").getTime();
-      const now = new Date().getTime();
-      const distance = endDate - now;
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("doomsday-clock").innerHTML =
-        "⏳ Collapse in: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-    }
-    setInterval(updateClock, 1000);
-    updateClock();
-  </script>
-
-  <h1>🎁 Free Download: Cold Weather Survival Guide</h1>
-  <p>Enter your email below to get instant access to our 10-item survival checklist built for real-world grit.</p>
-  <form onsubmit="showThankYou(); return false;">
-    <input type="email" placeholder="you@example.com" required />
-    <input type="submit" value="Get the PDF" />
-  </form>
-  <div class="thank-you" id="thanks">
-    <h2>✅ You're in.</h2>
-    <p>Click below to download your guide:</p>
-    <a href="Cold_Weather_Survival_Guide_FIXED.pdf" download style="color:#f90; font-weight:bold;">📄 Download the PDF</a>
+  <div class="texture-bg">
+    <header>
+      <img src="rough_grit_hq_logo.png" alt="Rough Grit HQ Logo" class="logo" />
+      <h1>Rough Grit HQ</h1>
+      <p>Rough Gear for Rougher Times</p>
+    </header>
+    <nav>
+      <a href="store.html" class="btn">Gear Store</a>
+      <a href="blog.html" class="btn">Survival Blog</a>
+      <a href="grit-test.html" class="btn">Take the Grit Test</a>
+    </nav>
+    <main>
+      <section class="feature-box">
+        <h2>Item of the Day</h2>
+        <p id="daily-item">Loading item...</p>
+      </section>
+      <section class="feature-box">
+        <h2>Today's Grit Quote</h2>
+        <blockquote id="daily-quote">Loading quote...</blockquote>
+      </section>
+      <section class="feature-box">
+        <h2>Collapse Countdown</h2>
+        <div id="doomsday-clock">Loading countdown...</div>
+      </section>
+      <section class="feature-box">
+        <h2>Free Survival Guide</h2>
+        <a href="Cold_Weather_Survival_Guide.pdf" download class="btn">Download PDF</a>
+      </section>
+      <section class="feature-box">
+        <h2>Enter the Bug-Out Raffle</h2>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Enter Now</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Serpico | Built to Survive</p>
+    </footer>
   </div>
-
-  <script>
-    function showThankYou() {
-      document.querySelector("form").style.display = "none";
-      document.getElementById("thanks").style.display = "block";
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
