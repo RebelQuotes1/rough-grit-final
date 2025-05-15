@@ -1,1 +1,73 @@
-<!DOCTYPE html><html><head><title>Grit Gear HQ</title></head><body><h1>Homepage Works</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rough Grit HQ</title>
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: #f1f1f1;
+            font-family: 'Share Tech Mono', monospace;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ffd700;
+        }
+        .box {
+            background-color: #1e1e1e;
+            border: 2px solid #ffd700;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+        a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rough Grit HQ</h1>
+    <p><em>Rough Gear for Rougher Times</em></p>
+
+    <div class="box">
+        <h2>Collapse Countdown</h2>
+        <div id="countdown">Loading...</div>
+    </div>
+
+    <div class="box">
+        <h2>Featured Survival Gear</h2>
+        <div id="gear">Loading item...</div>
+    </div>
+
+    <div class="box">
+        <h2>Grit Quote</h2>
+        <div id="quote">Loading quote...</div>
+    </div>
+
+    <div class="box">
+        <h2><a href="lead-magnet.pdf" target="_blank">Free Cold Weather Survival Guide</a></h2>
+    </div>
+
+    <div class="box">
+        <h2>Enter the Bug-Out Raffle</h2>
+        <input type="email" placeholder="Enter your email" />
+        <button>Enter Now</button>
+        <p>🔥 Limited Spots Left!</p>
+    </div>
+
+    <script>
+        document.getElementById("countdown").innerText = "23 Days until SHTF";
+        document.getElementById("gear").innerText = "SOG Folding Saw – Sharp, compact, brutal.";
+        document.getElementById("quote").innerText = "You don’t rise to the occasion. You fall to your level of grit.";
+    </script>
+</body>
+</html>
