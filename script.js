@@ -1,1 +1,1 @@
-This is a dummy version of script.js
+console.log('Grit Gear script active');
