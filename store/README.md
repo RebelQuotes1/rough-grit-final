@@ -1,0 +1,1 @@
+Store content placeholder
