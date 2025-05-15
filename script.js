@@ -1,1 +1,1 @@
-console.log('Grit Gear script active');
+console.log('JS Loaded');
