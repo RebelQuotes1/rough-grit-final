@@ -1,1 +1,1 @@
-console.log('Script loaded');
+This is a dummy version of script.js
