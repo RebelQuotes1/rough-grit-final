@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Guestbook</title>
+    <title>Grit Guestbook</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -34,12 +34,52 @@
         button:hover {
             background: #555;
         }
+        #messages {
+            margin-top: 2em;
+            padding: 1em;
+            background: #222;
+            border-radius: 8px;
+        }
+        .msg {
+            margin: 0.5em 0;
+            padding: 0.5em;
+            background: #1a1a1a;
+            border-left: 4px solid #00ffaa;
+        }
     </style>
 </head>
 <body>
+    <img src="rough_grit_logo.png" alt="Grit Gear HQ" style="max-width: 120px; margin-bottom: 1em;">
     <h1>Grit Guestbook</h1>
     <p>Say whatever’s on your mind. Keep it raw.</p>
-    <textarea placeholder="Leave your message... (Note: doesn't save yet)"></textarea>
-    <button onclick="alert('Thanks for leaving your mark. (This version doesn’t store input yet.)')">Submit</button>
+    <textarea id="entry" placeholder="Leave your message..."></textarea>
+    <button onclick="submitMessage()">Submit</button>
+    <div id="messages"></div>
+    <script>
+        const entry = document.getElementById('entry');
+        const messages = document.getElementById('messages');
+        const saved = JSON.parse(localStorage.getItem('grit_guestbook') || "[]");
+
+        function renderMessages() {
+            messages.innerHTML = '';
+            saved.forEach(m => {
+                const div = document.createElement('div');
+                div.className = 'msg';
+                div.textContent = m;
+                messages.appendChild(div);
+            });
+        }
+
+        function submitMessage() {
+            if(entry.value.trim() !== '') {
+                saved.push(entry.value.trim());
+                localStorage.setItem('grit_guestbook', JSON.stringify(saved));
+                entry.value = '';
+                renderMessages();
+            }
+        }
+
+        renderMessages();
+    </script>
 </body>
 </html>
