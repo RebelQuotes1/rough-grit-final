@@ -1,1 +1,24 @@
-body { background-color: #111; color: #fff; font-family: sans-serif; }
+
+body {
+  background-color: #111;
+  color: #eee;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2em;
+}
+header {
+  border-bottom: 1px solid #444;
+  margin-bottom: 2em;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 1em;
+}
+nav a {
+  color: #0cf;
+  text-decoration: none;
+}
