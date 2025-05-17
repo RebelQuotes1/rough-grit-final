@@ -1,1 +1,11 @@
-body { background-color: #111; color: #eee; font-family: sans-serif; text-align: center; padding: 2em; }
+
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+nav a {
+    color: #0ff;
+    margin: 0 10px;
+}
