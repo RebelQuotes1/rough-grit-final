@@ -1,1 +1,1 @@
-console.log('Site active');
+console.log('Grit Gear HQ loaded.');
