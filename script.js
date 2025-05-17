@@ -1,1 +1,1 @@
-console.log('Site scripts loaded with grit.');
+console.log('Fully live and working.');
