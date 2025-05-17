@@ -1,1 +1,1 @@
-console.log('Grit Gear loaded');
+console.log('REAL Grit Gear JS loaded');

@@ -1,8 +1,1 @@
-body { background: #111; color: #ddd; font-family: monospace; text-align: center; padding: 2em; }
-header, footer { margin-bottom: 2em; }
-nav a { margin: 0 1em; color: #4af; text-decoration: none; }
-nav a:hover { text-decoration: underline; }
-.gear { display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; }
-.item { background: #222; padding: 1em; border-radius: 5px; width: 300px; }
-.item img { width: 100%; border-radius: 5px; }
-.logo { width: 60px; margin-bottom: 1em; }
+body { background: #111; color: #eee; font-family: monospace; }
