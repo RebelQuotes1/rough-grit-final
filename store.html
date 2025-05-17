@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Grit Gear Store</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Grit Gear Store</title>
+    <style>
+        body { background-color: #111; color: #eee; font-family: monospace; text-align: center; }
+        .grid { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 40px; gap: 30px; }
+        .card { background-color: #222; border-radius: 8px; padding: 20px; width: 300px; }
+        a { color: #6bf; text-decoration: none; }
+        a:hover { color: #adf; }
+    </style>
 </head>
 <body>
-  <header>
     <h1>Grit Gear Store</h1>
-    <a href="index.html">← Back to Home</a>
-  </header>
-  <main>
+    <p><a href="index.html">&lt; Back to Home</a></p>
     <h2>Top Survival Gear</h2>
-    <div class="gear">
-      <div class="item">
-        <img src="gear1.jpg" alt="Survival Saw">
-        <h3>Pocket Chain Saw</h3>
-        <p>This ain't your grandpa’s handsaw. Rips through wood like your ex ripped through your heart. Lightweight, deadly, and always ready to bite.</p>
-        <a href="https://amzn.to/3Zka9fo" target="_blank">Buy on Amazon</a>
-      </div>
-      <div class="item">
-        <img src="gear2.jpg" alt="Fire Blanket">
-        <h3>Vehicle Fire Blanket</h3>
-        <p>Because your Bug-Out rig deserves protection too. Smothers flames without mercy—just like your mother-in-law's stare.</p>
-        <a href="https://amzn.to/3YOTP6g" target="_blank">Buy on Amazon</a>
-      </div>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Pocket Chain Saw</h3>
+            <p><em>Survival Saw</em></p>
+            <p>This ain’t your grandpa’s handsaw. Rips through wood like your ex ripped through your heart. Lightweight, deadly, and always ready to bite into bark or bone (if it came to that).</p>
+            <p><a href="https://amzn.to/3YOTP6g" target="_blank">Buy on Amazon</a></p>
+        </div>
+
+        <div class="card">
+            <h3>Vehicle Fire Blanket</h3>
+            <p><em>Fire Blanket</em></p>
+            <p>Because your Bug-Out rig deserves protection too. Smothers flames without mercy—just like your mother-in-law’s stare. Wrap it, throw it, and walk away like a boss.</p>
+            <p><a href="https://amzn.to/44CKRg4" target="_blank">Buy on Amazon</a></p>
+        </div>
+
+        <div class="card">
+            <h3>Crank Radio & Power Bank</h3>
+            <p><em>Crank Radio</em></p>
+            <p>Charge your phone, light up the dark, and get emergency updates while yelling into the void. This radio is more reliable than most people you know—and it cranks!</p>
+            <p><a href="https://amzn.to/3ZcyDr9" target="_blank">Buy on Amazon</a></p>
+        </div>
+
+        <div class="card">
+            <h3>30-Day Emergency Food Bucket</h3>
+            <p><em>Food Bucket</em></p>
+            <p>More calories than your last five Tinder dates combined. Keeps you alive when everything else has given up. Tastes like despair and survival mixed with artificial cheese.</p>
+            <p><a href="https://amzn.to/4dngPiO" target="_blank">Buy on Amazon</a></p>
+        </div>
+
+        <div class="card">
+            <h3>Emergency Ration Bars</h3>
+            <p><em>Survival Bars</em></p>
+            <p>Shelf life of 20 years. Chocolate flavored. Kind of. Think of it like chewing a brick of hope and desperation. Perfect for gnawing while staring into the apocalypse.</p>
+            <p><a href="https://amzn.to/45i0WIj" target="_blank">Buy on Amazon</a></p>
+        </div>
+
     </div>
-  </main>
-  <footer>&copy; 2024 Serpico. All rights reserved.</footer>
+    <footer style="margin-top: 50px;">&copy; 2024 Serpico. All rights reserved.</footer>
 </body>
 </html>
