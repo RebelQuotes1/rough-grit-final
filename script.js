@@ -1,1 +1,1 @@
-console.log('Grit Gear scripts ready.');
+console.log('Site scripts loaded with grit.');
