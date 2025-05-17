@@ -1,1 +1,1 @@
-console.log('Fully live and working.');
+console.log('Scripts are running. Grit mode: ON.');
