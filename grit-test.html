@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grit Test - Grit Gear HQ</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function showJoke() {
+      const jokes = [
+        "You thought MREs were a rap group. You're done.",
+        "You bartered your last match for a vape cartridge.",
+        "You asked a survivalist if they take Venmo. They took your boots instead.",
+        "You screamed 'Alexa, help' and a wild boar came. He wasn't feeling it."
+      ];
+      document.getElementById('joke').textContent = jokes[Math.floor(Math.random() * jokes.length)];
+    }
+  </script>
+</head>
+<body>
+  <header><h1>Grit Test</h1></header>
+  <main>
+    <p>Think you've got what it takes?</p>
+    <button onclick="showJoke()">Take the Test</button>
+    <p id="joke" style="margin-top: 1em; font-weight: bold;"></p>
+  </main>
+</body>
+</html>
