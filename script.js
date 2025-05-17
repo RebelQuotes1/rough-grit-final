@@ -1,1 +1,1 @@
-console.log('Rotating jokes, quotes, and raffle timer initialized.');
+console.log('Grit Gear loaded');
