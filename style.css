@@ -1,40 +1,37 @@
 body {
-  background: #111;
+  background-color: #111;
   color: #eee;
   font-family: monospace;
   margin: 0;
-  padding: 0;
-}
-.hero {
-  background: #222;
-  text-align: center;
-  padding: 4rem;
-}
-.hero .button {
-  display: inline-block;
-  background: orange;
-  color: #111;
-  padding: 10px 20px;
-  text-decoration: none;
-  margin-top: 1rem;
-  border-radius: 4px;
-}
-footer {
-  background: #000;
-  color: #888;
-  text-align: center;
   padding: 1rem;
 }
-.product {
+h1 {
   text-align: center;
-  margin: 2rem;
+  margin-bottom: 2rem;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.item {
+  background: #1c1c1c;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 250px;
+  text-align: center;
+}
+.item img {
+  width: 100%;
+  border-radius: 4px;
 }
 .button {
-  background-color: #f5a623;
+  background: #f5a623;
   color: #111;
   padding: 0.5rem 1rem;
   display: inline-block;
-  text-decoration: none;
   margin-top: 0.5rem;
+  text-decoration: none;
   border-radius: 4px;
 }
