@@ -12,6 +12,10 @@ header, footer {
 a {
     color: #0ff;
 }
-section {
+.product {
     margin-bottom: 2em;
+}
+img {
+    border: 1px solid #555;
+    margin-top: 0.5em;
 }
