@@ -1,1 +1,0 @@
-console.log('Scripts are running. Grit mode: ON.');
